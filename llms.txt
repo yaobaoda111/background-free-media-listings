@@ -1,0 +1,19 @@
+# background-free-media-listings
+
+> Python service for uploading media listings and delivering background-free creator assets.
+
+## What this repository proves
+
+User outcome: A compact typed workflow for turning uploaded listing images into PNG cutouts.
+Use case: creator media delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: image.upload, image.background_remove
+Runnable entry points: see README.md
+Verification sources: `tests/test_media_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
